@@ -90,6 +90,14 @@ API spec:
 http://localhost:3000/openapi.json
 ```
 
+### Vercel deployment
+
+This project can also be deployed on Vercel.
+
+- `api/index.js` is the serverless entry point
+- `vercel.json` rewrites all routes to that handler
+- after deployment, `/docs`, `/health`, `/api/...`, and `/openapi.json` should all work on the deployed domain
+
 ## Demo accounts
 
 These accounts are already available for testing:
